@@ -5,6 +5,8 @@ import { HeroesComponent } from './heroes/heroes.component';
 import { FormsModule } from '@angular/forms';
 import { MessagesComponent } from './messages/messages.component';
 import { routes } from './app.routes';
+import { HttpClientModule } from '@angular/common/http';
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +17,9 @@ import { routes } from './app.routes';
     HeroesComponent,
     FormsModule,
     MessagesComponent,
-    RouterLink
+    RouterLink,
+    HttpClientModule,
+    HttpClientInMemoryWebApiModule
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.sass',
